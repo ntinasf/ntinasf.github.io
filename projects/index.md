@@ -4,19 +4,19 @@ title: Projects
 subtitle: Data analytics case studies
 ---
 
-A collection of projects demonstrating statistical analysis, visualization, and business insight generation.
+A collection of projects demonstrating statistical analysis, visualization, and evidence-based insights.
 
 ---
 
 ### Thessaloniki Airbnb Market Analysis
 **Public Policy Analytics | 2025**
 
-Evidence-based recommendations for sustainable tourism growth through analysis of 4,700+ short-term rental properties.
+An evidence-based examination of 4,124 short-term rental listings to assess host ecosystem dynamics, geographic performance patterns, and market sustainability for tourism policy recommendations.
 
-**Skills:** Python, Statistical Testing, Power BI, Geospatial Analysis, Policy Recommendations
+**Tools:** Python, Statistical Hypothesis Testing, Power BI, Geospatial Analysis
 
 [View Case Study]({{ site.baseurl }}/projects/thessaloniki-airbnb){: .btn .btn-primary}
 
 ---
 
-*More projects coming soon*
+*More projects coming soon—including a credit risk classification model with interactive demo.*
