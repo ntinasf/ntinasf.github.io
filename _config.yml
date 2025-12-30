@@ -7,17 +7,10 @@ description: Data-driven insights for evidence-based decision making
 navbar-links:
   Home: "/"
   Projects: "projects"
-
-navbar-links:
-  Home: "/"
-  Projects: "projects"
-  About: "about"
+  About: "resume"
   
 url: "https://ntinasf.github.io"
 baseurl: ""
-
-avatar: "/assets/images/avatar.png"
-round-avatar: true
 
 social-network-links:
   github: https://github.com/ntinasf
