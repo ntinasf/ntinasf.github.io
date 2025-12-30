@@ -1,0 +1,28 @@
+remote_theme: daattali/beautiful-jekyll@6.0.1
+
+title: Ntinas Fotios
+subtitle: Data Analytics Portfolio
+description: Data-driven insights for evidence-based decision making
+
+navbar-links:
+  Home: ""
+  Projects: "projects"
+  
+url: "https://ntinasf.github.io"
+baseurl: ""
+
+avatar: "/assets/images/avatar.png"
+round-avatar: true
+
+social-network-links:
+  github: https://github.com/ntinasf
+  linkedin: www.linkedin.com/in/fotios-ntinas-4a3b4a2b7
+
+author:
+  name: Ntinas Fotios
+
+head-extra:
+  - og-image.html
+
+plugins:
+  - jekyll-remote-theme
