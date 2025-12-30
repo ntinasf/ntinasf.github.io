@@ -5,7 +5,7 @@ subtitle: Data Analytics Portfolio
 description: Data-driven insights for evidence-based decision making
 
 navbar-links:
-  Home: ""
+  Home: "/"
   Projects: "projects"
   
 url: "https://ntinasf.github.io"
