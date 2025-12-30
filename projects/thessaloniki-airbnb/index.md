@@ -16,9 +16,14 @@ This analysis examines **4,124 licensed Airbnb listings** to answer a simple que
 
 The short answer: mostly yes, but with caveats worth noting.
 
-**[Explore the Interactive Dashboard](#interactive-dashboard){: .btn .btn-primary}** · **[View Code on GitHub](https://github.com/ntinasf/airbnb-rental-market-analysis-thessaloniki){: .btn .btn-info}**
+## Interactive Dashboard
+{: #interactive-dashboard}
 
----
+Explore the findings interactively through the Power BI dashboard below.
+
+<iframe title="thess_report" width="100%" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiMjBjYjRjMjAtNmM1Ni00MmMxLWI5ZTEtMDIwMjhkYTU2ZmM0IiwidCI6IjNhN2FiMTFmLWQyNjItNGFhNC1hNjgyLTRhZjYyYzM4NDM5MyIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
+--- 
+
 
 ## Before We Begin: The Compliance Question
 
@@ -300,15 +305,6 @@ Thessaloniki's STR market has the pieces in place. The question is whether growt
 
 ---
 
-## Interactive Dashboard
-{: #interactive-dashboard}
-
-Explore the findings interactively through the Power BI dashboard below.
-
-*[Power BI embed will be added here]*
-
----
-
 ## Methodology
 
 - **Data source**: Inside Airbnb (June 2025 snapshot)
@@ -324,7 +320,7 @@ Explore the findings interactively through the Power BI dashboard below.
 
 **Tools Used:** Python, Pandas, NumPy, SciPy, Matplotlib, Seaborn, Power BI, DAX
 
-**Full Analysis Notebooks:**
+**Full Analysis Notebooks With Statistical Tests:**
 - [Regulatory Compliance Analysis](https://github.com/ntinasf/airbnb-rental-market-analysis-thessaloniki/blob/main/notebooks/regulatory_compliance.ipynb)
 - [Host Type Impact Analysis](https://github.com/ntinasf/airbnb-rental-market-analysis-thessaloniki/blob/main/notebooks/host_type_impact.ipynb)
 - [Geographic Performance Analysis](https://github.com/ntinasf/airbnb-rental-market-analysis-thessaloniki/blob/main/notebooks/geographic_performance.ipynb)
