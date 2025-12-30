@@ -1,10 +1,9 @@
 ---
 layout: page
 title: Data Analytics Portfolio
-subtitle: Aspiring Data Scientist with a Mathematical Background
 ---
 
-## Hello, I am Fotiss
+## Hello, I am Fotis
 
 I hold a Master's in Data Science & Machine Learning and a Bachelor's in Mathematics. My work focuses on translating complex datasets into evidence-based insights through statistical rigor and clear communication.
 
