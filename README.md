@@ -1,2 +1,35 @@
-# ntinasf.github.io
-Data Science &amp; Analytics Portfolio
+---
+layout: page
+title: Data Analytics Portfolio
+subtitle: Turning complex data into actionable insights
+hero_image: /assets/images/hero-gradient.png
+hero_darken: true
+show_sidebar: false
+---
+
+## Hi, I'm Fotis
+
+I'm a data analyst focused on translating complex datasets into evidence-based recommendations. My work combines statistical rigor with clear storytelling to drive informed decision-making.
+
+**Core competencies:** Statistical Analysis • Data Visualization • Python • Power BI • Policy Analytics
+
+---
+
+## Featured Project
+
+### Thessaloniki Airbnb Market Analysis
+
+An evidence-based analysis of 4,700+ short-term rental properties, providing policy recommendations for sustainable tourism growth.
+
+[View Full Case Study](/projects/thessaloniki-airbnb/){: .button .is-primary}
+
+---
+
+## Get in Touch
+{: #contact}
+
+I'm open to discussing data analytics opportunities and collaborations.
+
+- **Email:** [your.email@example.com](mailto:ntinasfotios@gmail.com)
+- **LinkedIn:** [Connect with me](https://linkedin.com/in/otios-ntinas-4a3b4a2b7)
+- **GitHub:** [View my repositories](https://github.com/ntinasf)
