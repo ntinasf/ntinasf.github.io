@@ -2,9 +2,6 @@
 layout: page
 title: Data Analytics Portfolio
 subtitle: Turning complex data into actionable insights
-hero_image: /assets/images/hero-gradient.png
-hero_darken: true
-show_sidebar: false
 ---
 
 ## Hi, I'm Fotis
@@ -21,7 +18,9 @@ I'm a data analyst focused on translating complex datasets into evidence-based r
 
 An evidence-based analysis of 4,700+ short-term rental properties, providing policy recommendations for sustainable tourism growth.
 
-[View Full Case Study](/projects/thessaloniki-airbnb/){: .button .is-primary}
+**Skills:** Python, Statistical Hypothesis Testing, Power BI, Geospatial Analysis
+
+[View Full Case Study]({{ site.baseurl }}/projects/thessaloniki-airbnb){: .btn .btn-primary}
 
 ---
 
