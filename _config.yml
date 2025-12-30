@@ -26,3 +26,6 @@ head-extra:
 
 plugins:
   - jekyll-remote-theme
+
+site-css:
+  - "/assets/css/custom-styles.css"
