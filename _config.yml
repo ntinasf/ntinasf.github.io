@@ -1,0 +1,34 @@
+# Site Settings
+title: Ntinas Fotis | Data Analytics Portfolio
+description: Data-driven insights for evidence-based decision making
+url: "https://ntinasf.github.io"
+baseurl: ""
+
+# Theme
+remote_theme: chrisrhymes/bulma-clean-theme
+
+# Plugins
+plugins:
+  - jekyll-remote-theme
+  - jekyll-sitemap
+  - jekyll-paginate
+
+# Navigation
+navbar:
+  - title: Home
+    url: /
+  - title: Projects
+    url: /projects/
+  - title: Contact
+    url: /#contact
+
+# Footer
+footer_menu:
+  - title: GitHub
+    url: https://github.com/ntinasf
+  - title: LinkedIn
+    url: https://www.linkedin.com/in/fotios-ntinas-4a3b4a2b7/
+
+# Build Settings
+markdown: kramdown
+permalink: pretty
