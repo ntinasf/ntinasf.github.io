@@ -1,14 +1,14 @@
 ---
 layout: page
 title: Data Analytics Portfolio
-subtitle: Turning complex data into actionable insights
+subtitle: Aspiring Data Scientist with a Mathematical Background
 ---
 
-## Hi, I'm Fotis
+## Hello, I am Fotiss
 
-I'm a data analyst focused on translating complex datasets into evidence-based recommendations. My work combines statistical rigor with clear storytelling to drive informed decision-making.
+I hold a Master's in Data Science & Machine Learning and a Bachelor's in Mathematics. My work focuses on translating complex datasets into evidence-based insights through statistical rigor and clear communication.
 
-**Core competencies:** Statistical Analysis • Data Visualization • Python • Power BI • Policy Analytics
+Currently building hands-on experience across the data science pipeline.
 
 ---
 
@@ -16,19 +16,36 @@ I'm a data analyst focused on translating complex datasets into evidence-based r
 
 ### Thessaloniki Airbnb Market Analysis
 
-An evidence-based analysis of 4,700+ short-term rental properties, providing policy recommendations for sustainable tourism growth.
+An evidence-based analysis of 4,124 short-term rental listings, examining host ecosystem dynamics, geographic performance patterns, and market sustainability to inform tourism policy recommendations.
 
-**Skills:** Python, Statistical Hypothesis Testing, Power BI, Geospatial Analysis
+**Tools:** Python, Power BI, Statistical Hypothesis Testing
 
-[View Full Case Study]({{ site.baseurl }}/projects/thessaloniki-airbnb){: .btn .btn-primary}
+[View Case Study]({{ site.baseurl }}/projects/thessaloniki-airbnb){: .btn .btn-primary}
+
+---
+
+## Skills & Tools
+
+**Analysis & Statistics:** Hypothesis Testing, A/B Testing, Exploratory Data Analysis, Feature Engineering
+
+**Languages & Libraries:** Python (Pandas, NumPy, Scikit-learn, TensorFlow), SQL (PostgreSQL, BigQuery), R
+
+**Visualization & BI:** Power BI, Tableau, Excel, Matplotlib, Seaborn
+
+**Cloud & Tools:** Azure (Certified), Git/GitHub, Docker
+
+---
+
+## Certifications
+
+- Microsoft Azure Data Scientist Associate
+- Microsoft Power BI Data Analyst Associate
+- Microsoft Azure AI Fundamentals
 
 ---
 
 ## Get in Touch
-{: #contact}
 
-I'm open to discussing data analytics opportunities and collaborations.
+📧 [ntinasfotios@gmail.com](mailto:ntinasfotios@gmail.com)
 
-- **Email:** [your.email@example.com](mailto:ntinasfotios@gmail.com)
-- **LinkedIn:** [Connect with me](https://linkedin.com/in/otios-ntinas-4a3b4a2b7)
-- **GitHub:** [View my repositories](https://github.com/ntinasf)
+[LinkedIn](https://www.linkedin.com/in/fotios-ntinas-4a3b4a2b7){: .btn .btn-info} · [GitHub](https://github.com/ntinasf){: .btn .btn-dark}
