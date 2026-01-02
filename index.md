@@ -23,7 +23,7 @@ title: " "
   <div class="home-content">
     <h1 class="content-title">Fotios Ntinas</h1>
     <p>
-      Data science sits at the intersection of what drives me: finding patterns in complexity, building models that work in practice, and turning rigorous analysis into action.
+      Data science sits at the intersection of what drives me: finding patterns in complexity, building models that work in practice and turning rigorous analysis into action.
     </p>
     
     <h2 class="section-title">About Me</h2>
