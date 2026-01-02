@@ -23,23 +23,23 @@ title: " "
   <div class="home-content">
     <h1 class="content-title">Fotios Ntinas</h1>
     <p>
-      I'm drawn to the challenge of making sense of complex data—finding patterns in numbers, building models that reflect how the world works, and turning raw information into stories that drive decisions. Problem-solving is at the core of what motivates me.
+      Data science sits at the intersection of what drives me: finding patterns in complexity, building models that work in practice, and turning rigorous analysis into action.
     </p>
     
     <h2 class="section-title">About Me</h2>
     <p>
-      I hold a Master's in Data Science & Machine Learning from Hellenic Open University and a Bachelor's in Mathematics from Aristotle University of Thessaloniki. For nearly a decade, I've worked as a mathematics tutor, developing strong skills in breaking down complex concepts and communicating them clearly to diverse audiences.
+      My foundation is in mathematics, with a Bachelor's from Aristotle University of Thessaloniki and a Master's in Data Science & Machine Learning from Hellenic Open University. But my real training came from nearly a decade as a mathematics tutor, where I learned that technical depth only matters if you can make it clear and usable for others.
     </p>
     <p>
-      Now I'm channeling that analytical foundation into data science—combining statistical rigor with practical tools like Python, SQL, and Power BI to extract insights from data. I'm particularly interested in roles where I can apply evidence-based analysis to real-world problems.
+      I apply that analytical foundation using statistical rigor alongside tools like Python, SQL and Power BI to extract insights that are clear, defensible and actually answer the questions that matter. I focus on tackling real-world problems and turning data into actionable insights.
     </p>
     
     <h2 class="section-title">Featured Project</h2>
     <h3>Thessaloniki Airbnb Market Analysis</h3>
     <p>
-      An evidence-based analysis of 4,124 short-term rental listings, examining host ecosystem dynamics, geographic performance patterns, and market sustainability to inform tourism policy recommendations.
+      An evidence-based analysis of 4,124 short-term rental listings, examining host ecosystem dynamics, geographic performance patterns and market sustainability to inform tourism policy recommendations.
     </p>
-    <p><strong>Tools:</strong> Python, Statistical Hypothesis Testing, Power BI, Geospatial Analysis</p>
+    <p><strong>Tools:</strong> Python, Power BI, Statistical Hypothesis Testing, Geospatial Analysis, Feature Engineering</p>
     <p>
       <a href="{{ site.baseurl }}/projects/thessaloniki-airbnb" class="btn btn-primary">View Case Study</a>
       <a href="{{ site.baseurl }}/projects" class="btn btn-info">All Projects</a>
