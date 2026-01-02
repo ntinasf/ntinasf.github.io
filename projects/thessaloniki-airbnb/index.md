@@ -116,9 +116,7 @@ Here **mid-scale operators (2-10 listings) achieve the highest superhost rates**
 
 Does the quality investment pay off? Absolutely, but unevenly across categories.
 
-<p align="center">
-    <img src="images/Superhost%20premium%20by%20host%20category.png" alt="Superhost Revenue Premium by Host Category" width="700">
-</p>
+<img src="/assets/images/thessaloniki/Superhost%20premium%20by%20host%20category.png" alt="Superhost Revenue Premium by Host Category" width="650">
 
 | Host Category | Mean Revenue Multiplier (SH vs Non-SH) |
 |--------------|-----------------------------------|
@@ -264,9 +262,7 @@ The squeeze is on mid-scale operators. The market appears to be bifurcating: pro
 
 New listings show dramatically higher rating variance than established ones, scoring almost **2.4× greater standard deviation** (σ = 0.51 vs 0.21).
 
-<p align="center">
-    <img src="images/Quality%20variance%20by%20maturity.png" alt="Quality Variance by Market Maturity" width="500">
-</p>
+<img src="/assets/images/thessaloniki/Quality%20variance%20by%20maturity.png" alt="Quality Variance by Market Maturity" width="500">
 
 Levene's test confirms this isn't just sampling noise (p < 0.001). Quality predictability declines with market growth: some new entrants excel immediately while others underperform significantly.
 
@@ -278,9 +274,7 @@ The variance story has a specific shape. An upward trend in premium listing (>�
 
 **Large Multi hosts show clear quality decline in budget categories** (Low and Very Low priced listings) among post-2023 entrants, while Individual and Small/Medium multihosts maintain stable quality across the same period.
 
-<p align="center">
-    <img src="images/Large%20multi%20quality%20heatmap.png" alt="Large Multi Quality Heatmap" width="500">
-</p>
+<img src="/assets/images/thessaloniki/Large%20multi%20quality%20heatmap.png" alt="Large Multi Quality Heatmap" width="500">
 
 Zooming into core zones (Downtown and Inner City) for 2021-2025:
 
@@ -318,7 +312,7 @@ Thessaloniki's STR market has the pieces in place. The question is whether growt
 - **Geographic reference**: White Tower / Aristotelous Square midpoint (40.62962°N, 22.94473°E)
 - **Market maturity proxy**: First review date
 - **Limitations**: Revenue estimates based on occupancy proxies; suburban sample (n=91) limits statistical power for that segment; first review date may not precisely capture market entry timing; regulatory compliance concerns should be validated with additional data sources and regulatory guidelines
-- **Data anonymization**: All data presented is stripped of personally identifiable information.
+- **Data anonymization**: All data presented is stripped of personally identifiable information (see [Preprocessing Log](https://github.com/ntinasf/airbnb-rental-market-analysis-thessaloniki/blob/main/scripts/data_preprocessing_log.md) for details
 
 ---
 
