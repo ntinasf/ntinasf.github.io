@@ -312,7 +312,7 @@ Thessaloniki's STR market has the pieces in place. The question is whether growt
 - **Geographic reference**: White Tower / Aristotelous Square midpoint (40.62962°N, 22.94473°E)
 - **Market maturity proxy**: First review date
 - **Limitations**: Revenue estimates based on occupancy proxies; suburban sample (n=91) limits statistical power for that segment; first review date may not precisely capture market entry timing; regulatory compliance concerns should be validated with additional data sources and regulatory guidelines
-- **Data anonymization**: All data presented is stripped of personally identifiable information (see [Preprocessing Log](https://github.com/ntinasf/airbnb-rental-market-analysis-thessaloniki/blob/main/scripts/data_preprocessing_log.md) for details
+- **Data anonymization**: All data presented is stripped of personally identifiable information (see [Preprocessing Log](https://github.com/ntinasf/airbnb-rental-market-analysis-thessaloniki/blob/main/scripts/data_preprocessing_log.md) for details)
 
 ---
 
