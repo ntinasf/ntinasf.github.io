@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Thessaloniki's Short-Term Rental Market
-subtitle: A Data-Driven Analysis for Sustainable Tourism Policy
 ---
 
 *An evidence-based examination of 4,124 Airbnb listings to inform sustainable tourism policy*
