@@ -6,7 +6,7 @@ subtitle: Ensemble Machine Learning Model with Interactive Demo
 
 A machine learning system that predicts credit risk for loan applicants using an ensemble of three models combined through soft voting.
 
-**[🚀 Try the Live Demo](https://your-app-name.streamlit.app){: .btn .btn-primary}** · **[View Code on GitHub](https://github.com/ntinasf/credit-risk-svm){: .btn .btn-info}**
+**[ Try the Live Demo](https://credit-risk-svm-hokxpyoex9pcn95vardjas.streamlit.app){: .btn .btn-primary}** · **[View Code on GitHub](https://github.com/ntinasf/credit-risk-svm){: .btn .btn-info}**
 
 ---
 
