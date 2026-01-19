@@ -44,5 +44,15 @@ title: " "
       <a href="{{ site.baseurl }}/projects/thessaloniki-airbnb" class="btn btn-primary">View Case Study</a>
       <a href="{{ site.baseurl }}/projects" class="btn btn-info">All Projects</a>
     </p>
+
+    <h3>Credit Risk Classification</h3>
+    <p>
+      An ensemble ML model with an interactive demo for predicting loan applicant credit risk.
+    </p>
+    <p><strong>Tools:</strong> Python, Scikit-learn, MLflow, Streamlit</p>
+    <p>
+      <a href="{{ site.baseurl }}/projects/credit-risk-classifier" class="btn btn-primary">View Case Study</a>
+      <a href="https://your-app-name.streamlit.app" class="btn btn-info">Try Demo</a>
+    </p>
   </div>
 </div>
