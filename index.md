@@ -34,7 +34,7 @@ title: " "
       I apply that analytical foundation using statistical rigor alongside tools like Python, SQL and Power BI to extract insights that are clear, defensible and actually answer the questions that matter. I focus on tackling real-world problems and turning data into actionable insights.
     </p>
     
-    <h2 class="section-title">Featured Project</h2>
+    <h2 class="section-title">Featured Projects</h2>
     <h3>Thessaloniki Airbnb Market Analysis</h3>
     <p>
       An evidence-based analysis of 4,124 short-term rental listings, examining host ecosystem dynamics, geographic performance patterns and market sustainability to inform tourism policy recommendations.
@@ -44,6 +44,7 @@ title: " "
       <a href="{{ site.baseurl }}/projects/thessaloniki-airbnb" class="btn btn-primary">View Case Study</a>
       <a href="{{ site.baseurl }}/projects" class="btn btn-info">All Projects</a>
     </p>
+
 
     <h3>Credit Risk Classification</h3>
     <p>
