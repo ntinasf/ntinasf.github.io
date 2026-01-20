@@ -23,7 +23,7 @@ title: " "
   <div class="home-content">
     <h1 class="content-title">Fotios Ntinas</h1>
     <p>
-      Data science sits at the intersection of what drives me: finding patterns in complexity, building models that work in practice and turning rigorous analysis into action.
+      Welcome! I'm Fotis, a mathematician by training who transitioned into data science. I enjoy working with numbers and solving real problems. Data science is how I get to do both.
     </p>
     
     <h2 class="section-title">About Me</h2>
@@ -32,6 +32,10 @@ title: " "
     </p>
     <p>
       I apply that analytical foundation using statistical rigor alongside tools like Python, SQL and Power BI to extract insights that are clear, defensible and actually answer the questions that matter. I focus on tackling real-world problems and turning data into actionable insights.
+    </p>
+
+    <p style="margin-top: 1.5rem;">
+      <a href="{{ site.baseurl }}/assets/documents/Ntinas_CV.pdf" class="btn btn-primary" download>📄 Download CV</a>
     </p>
     
     <h2 class="section-title">Featured Projects</h2>
