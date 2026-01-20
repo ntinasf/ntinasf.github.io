@@ -1,136 +1,133 @@
 ---
 layout: page
 title: Credit Risk Classification
-subtitle: Ensemble Machine Learning Model with Interactive Demo
+subtitle: Ensemble Machine Learning for Loan Default Prediction
 ---
 
-A machine learning system that predicts credit risk for loan applicants using an ensemble of three models combined through soft voting.
+This project builds a production-ready credit risk classifier using the [German Credit Dataset](https://archive.ics.uci.edu/dataset/144/statlog+german+credit+data). It demonstrates end-to-end machine learning workflow including custom feature engineering, multiple encoding strategies, class imbalance handling, and cost-sensitive optimization — culminating in an ensemble model deployed as an interactive web application.
 
-**[ Try the Live Demo](https://credit-risk-svm-hokxpyoex9pcn95vardjas.streamlit.app){: .btn .btn-primary}** · **[View Code on GitHub](https://github.com/ntinasf/credit-risk-svm){: .btn .btn-info}**
-
----
-
-## Project Overview
-
-Financial institutions need reliable methods to assess credit risk before approving loans. This project builds an ensemble classifier that combines the strengths of three different algorithms to produce more robust predictions than any single model.
-
-### The Ensemble Approach
-
-| Model | Strengths | Role in Ensemble |
-|-------|-----------|------------------|
-| **Logistic Regression** | Interpretable, stable probabilities | Baseline predictions |
-| **Random Forest** | Handles non-linear relationships | Captures complex patterns |
-| **Support Vector Classifier** | Strong with high-dimensional data | Decision boundary refinement |
-
-The final prediction uses **weighted soft voting**, combining probability estimates from all three models based on their individual performance characteristics.
+<p style="margin: 1.5rem 0;">
+  <a href="https://credit-risk-svm-hokxpyoex9pcn95vardjas.streamlit.app" class="btn btn-primary" target="_blank">🚀 Try the Live Demo</a>
+  <a href="https://github.com/ntinasf/credit-risk-svm" class="btn btn-secondary" target="_blank">📂 View Repository</a>
+</p>
 
 ---
 
-## Interactive Demo
+## Business Context
 
-The Streamlit application allows you to:
+When a lending institution receives a loan application, it must decide whether to approve based on the applicant's profile. Lending to high-risk applicants is the largest source of financial loss for lenders. This project addresses that challenge by predicting credit risk (good/bad) for loan applicants using an ensemble of three machine learning models.
 
-- **Test with random samples** from the dataset to see how the model performs
-- **Input custom values** to get predictions for hypothetical applicants
-- **View model breakdown** showing how each algorithm contributed to the final decision
-
-<iframe src="(https://credit-risk-svm-hokxpyoex9pcn95vardjas.streamlit.app)" width="100%" height="700" frameborder="0"></iframe>
+**The key insight:** Not all prediction errors are equal. Approving a customer who defaults (false positive) costs significantly more than rejecting a creditworthy customer (false negative). The model is optimized for this asymmetric cost structure.
 
 ---
 
 ## Technical Approach
 
-### Feature Engineering
+### The Ensemble Architecture
 
-The `FeatureEngineer` transformer creates derived features that improve model performance:
+The final model uses **soft voting** across three classifiers, each with its own preprocessing pipeline optimized for its characteristics:
 
-- **Monthly Burden:** `credit_amount / duration_months` — captures payment intensity
-- **Duration-to-Age Ratio:** Relative loan length compared to borrower's age
-- **Category Consolidation:** Merging sparse categories for better generalization
-- **Log Transformations:** Normalizing skewed distributions
+| Model | Encoding Strategy | Imbalance Handling |
+|-------|-------------------|-------------------|
+| **Support Vector Classifier** | WOE + Target + Count + One-Hot | SVMSMOTE |
+| **Logistic Regression** | WOE + Count + One-Hot | SMOTE |
+| **Random Forest** | One-Hot + Count + Target | Cost-sensitive weights |
 
-### Preprocessing Pipelines
+The ensemble combines predictions with learned weights [2.5, 1.5, 3.0] and uses a tuned decision threshold of 0.63.
 
-Each model uses a tailored encoding strategy optimized for its characteristics:
+### Cost Function Optimization
 
-| Model | Encoding Strategy |
-|-------|-------------------|
-| Logistic Regression | WOE + Count + One-Hot |
-| Random Forest | Ordinal + Target + One-Hot |
-| SVC | WOE + Target + One-Hot |
+Following the dataset's documentation, the model optimizes for a business-realistic cost function:
 
-### Class Imbalance Handling
+- **False Positive** (approve a defaulter): **5 cost units** — represents potential default losses
+- **False Negative** (reject a good customer): **1 cost unit** — represents lost business opportunity
 
-The dataset has ~70% good credit vs ~30% bad credit. Addressed through:
+This 5:1 cost ratio drives all threshold tuning and model selection decisions.
 
-- **SMOTE/SVMSMOTE** for synthetic minority oversampling
-- **Cost-sensitive learning** with custom class weights
-- **Threshold tuning** using `TunedThresholdClassifierCV`
+### Custom Feature Engineering
 
-### Cost Function
+The `FeatureEngineer` transformer applies domain-specific transformations:
 
-The model optimizes for a business-realistic cost function:
-
-| Error Type | Cost | Rationale |
-|------------|------|-----------|
-| False Negative (reject good customer) | 1 | Lost business opportunity |
-| False Positive (accept bad customer) | 5 | Potential default loss |
+- **Monthly Burden:** `credit_amount / duration_months` (log-transformed) — captures payment intensity
+- **Duration-to-Age Ratio:** Loan duration relative to applicant age — captures lifecycle appropriateness  
+- **Age Groups:** Young, Early Career, Prime, Mature — categorical binning for non-linear effects
+- **Credit Amount Bins:** Quintile-based categorization
+- **Category Consolidation:** Merging sparse categories (e.g., rare job types, housing situations) for better generalization
+- **No-Checking Flag:** Binary indicator for applicants without checking accounts — a strong risk signal
 
 ---
 
 ## Model Performance
 
-| Metric | Ensemble | Best Individual |
-|--------|----------|-----------------|
-| ROC AUC | **~0.79** | ~0.78 (SVC) |
-| Average Cost | **~0.43** | ~0.45 |
-| Accuracy | ~0.75 | ~0.74 |
+After threshold tuning for the cost function:
 
-The ensemble consistently outperforms individual models, demonstrating the value of combining diverse algorithms.
+| Model | ROC AUC | Average Cost |
+|-------|---------|--------------|
+| SVC (SVMSMOTE) | ~0.81 | ~0.43 |
+| Logistic Regression | ~0.80 | ~0.49 |
+| Random Forest | ~0.82 | ~0.53 |
+| **Ensemble** | **~0.79** | **~0.43** |
 
----
-
-## Experiment Tracking
-
-All training runs were logged using **MLflow**, tracking:
-
-- Hyperparameters and tuning results
-- Performance metrics across validation folds
-- Learning curves for bias-variance diagnosis
-- Confusion matrices and precision-recall curves
+The ensemble achieves the lowest average cost while maintaining competitive AUC, demonstrating the value of combining diverse models for robust predictions.
 
 ---
 
-## Dataset
+## Interactive Demo
 
-**German Credit Dataset** from UCI Machine Learning Repository
+The Streamlit application below allows you to test the model with real data:
 
+- **Sample from test set:** Load actual applicant profiles (with known outcomes) to validate predictions
+- **Manual input:** Enter custom applicant information to see how the model responds
+
+<iframe src="https://credit-risk-svm-hokxpyoex9pcn95vardjas.streamlit.app?embedded=true" 
+  width="100%" height="700" frameborder="0" style="border-radius: 8px; margin: 1rem 0;"></iframe>
+
+---
+
+## Experiment Tracking with MLflow
+
+All model training is tracked using MLflow, enabling:
+
+- **Hyperparameter logging** for reproducibility
+- **Metric comparison** across runs (ROC AUC, precision, recall, cost)
+- **Artifact storage** including learning curves, confusion matrices, and PR curves
+- **Model versioning** for the production ensemble
+
+---
+
+## Dataset Overview
+
+- **Source:** UCI Machine Learning Repository — German Credit Data
 - **Samples:** 1,000 loan applicants
 - **Features:** 20 attributes (7 numerical, 13 categorical)
-- **Target:** Binary classification (Good/Bad credit risk)
+- **Target:** Binary classification (Good=0, Bad=1)
+- **Class Distribution:** ~70% Good, ~30% Bad
+
+---
+
+## Key Takeaways
+
+1. **Cost-sensitive optimization** dramatically changes model behavior compared to accuracy-focused training
+2. **Ensemble methods** provide more stable predictions than individual models when costs are asymmetric
+3. **Feature engineering** with domain knowledge (monthly burden, age groups) improves both performance and interpretability
+4. **Multiple encoding strategies** work better when tailored to each model's characteristics
 
 ---
 
 ## Tools & Technologies
 
-**Languages & Libraries:** Python, Pandas, NumPy, Scikit-learn, Imbalanced-learn
-
-**Experiment Tracking:** MLflow
-
-**Deployment:** Streamlit Cloud
-
-**Version Control:** Git, GitHub
+<div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0;">
+  <span style="background: var(--light-bg); padding: 0.3rem 0.8rem; border-radius: 4px; font-size: 0.9rem;">Python</span>
+  <span style="background: var(--light-bg); padding: 0.3rem 0.8rem; border-radius: 4px; font-size: 0.9rem;">scikit-learn</span>
+  <span style="background: var(--light-bg); padding: 0.3rem 0.8rem; border-radius: 4px; font-size: 0.9rem;">imbalanced-learn</span>
+  <span style="background: var(--light-bg); padding: 0.3rem 0.8rem; border-radius: 4px; font-size: 0.9rem;">category_encoders</span>
+  <span style="background: var(--light-bg); padding: 0.3rem 0.8rem; border-radius: 4px; font-size: 0.9rem;">MLflow</span>
+  <span style="background: var(--light-bg); padding: 0.3rem 0.8rem; border-radius: 4px; font-size: 0.9rem;">Streamlit</span>
+  <span style="background: var(--light-bg); padding: 0.3rem 0.8rem; border-radius: 4px; font-size: 0.9rem;">joblib</span>
+</div>
 
 ---
 
-## Repository Structure
-```
-credit-risk-svm/
-├── notebooks/           # EDA and experimentation
-├── scripts/             # Training pipelines
-├── streamlit_app/       # Interactive demo
-├── data/                # Raw and processed data
-└── mlruns/              # MLflow artifacts
-```
-
-**[View Full Repository](https://github.com/ntinasf/credit-risk-svm)**
+<p style="text-align: center; margin-top: 2rem;">
+  <a href="https://github.com/ntinasf/credit-risk-svm" target="_blank">View Full Repository →</a>
+</p>
