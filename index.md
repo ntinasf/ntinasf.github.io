@@ -35,7 +35,7 @@ title: " "
     </p>
 
     <p style="margin-top: 1.5rem;">
-      <a href="{{ site.baseurl }}/assets/documents/Ntinas_CV.pdf" class="btn btn-primary" target="_blank">📄 View CV</a>
+      <a href="{{ site.baseurl }}/assets/documents/Fotios_Ntinas_CV.pdf" class="btn btn-primary" target="_blank">📄 View CV</a>
     </p>
     
     <h2 class="section-title">Featured Projects</h2>
