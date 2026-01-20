@@ -35,7 +35,7 @@ title: " "
     </p>
 
     <p style="margin-top: 1.5rem;">
-      <a href="{{ site.baseurl }}/assets/documents/Ntinas_CV.pdf" class="btn btn-primary" download>📄 Download CV</a>
+      <a href="{{ site.baseurl }}/assets/documents/Ntinas_CV.pdf" class="btn btn-primary" target="_blank">📄 View CV</a>
     </p>
     
     <h2 class="section-title">Featured Projects</h2>
@@ -46,7 +46,6 @@ title: " "
     <p><strong>Tools:</strong> Python, Power BI, Statistical Hypothesis Testing, Geospatial Analysis, Feature Engineering</p>
     <p>
       <a href="{{ site.baseurl }}/projects/thessaloniki-airbnb" class="btn btn-primary">View Case Study</a>
-      <a href="{{ site.baseurl }}/projects" class="btn btn-info">All Projects</a>
     </p>
 
 
@@ -57,7 +56,7 @@ title: " "
     <p><strong>Tools:</strong> Python, Scikit-learn, MLflow, Streamlit</p>
     <p>
       <a href="{{ site.baseurl }}/projects/credit-risk-classifier" class="btn btn-primary">View Case Study</a>
-      <a href="https://your-app-name.streamlit.app" class="btn btn-info">Try Demo</a>
+      <a href="https://credit-risk-svm-hokxpyoex9pcn95vardjas.streamlit.app" class="btn btn-info" target="_blank">Try Demo</a>
     </p>
   </div>
 </div>
