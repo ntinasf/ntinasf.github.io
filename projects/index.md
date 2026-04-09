@@ -26,6 +26,6 @@ An ensemble machine learning model combining Logistic Regression, Random Forest,
 
 **Tools:** Python, Scikit-learn, MLflow, Streamlit
 
-[View Case Study]({{ site.baseurl }}/projects/credit-risk-classifier){: .btn .btn-primary} · [Try Live Demo](https://your-app-name.streamlit.app){: .btn .btn-info}
+[View Case Study]({{ site.baseurl }}/projects/credit-risk-classifier){: .btn .btn-primary} · [Try Live Demo](https://credit-risk-h6wzqyepauzgpp29kypx9e.streamlit.app){: .btn .btn-info}
 
 ---
