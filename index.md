@@ -56,7 +56,7 @@ title: " "
     <p><strong>Tools:</strong> Python, Scikit-learn, MLflow, Streamlit</p>
     <p>
       <a href="{{ site.baseurl }}/projects/credit-risk-classifier" class="btn btn-primary">View Case Study</a>
-      <a href="https://credit-risk-svm-hokxpyoex9pcn95vardjas.streamlit.app" class="btn btn-info" target="_blank">Try Demo</a>
+      <a href="https://credit-risk-h6wzqyepauzgpp29kypx9e.streamlit.app" class="btn btn-info" target="_blank">Try Demo</a>
     </p>
   </div>
 </div>
