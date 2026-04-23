@@ -101,6 +101,9 @@ The ensemble achieved test-set performance close to its validation performance, 
 | Average Cost per Applicant | 0.44 | Best business-facing summary |
 | Decision Threshold | 0.84 | Final production threshold |
 
+![Confusion matrix for the final ensemble on the test set](/assets/images/credit-risk-classifier/confusion_matrix.png)
+*Confusion matrix for the ensemble on the test set.*
+
 ### Model comparison table
 
 | Model | ROC AUC | Average Precision | Precision | Recall | Accuracy | Average Cost |
@@ -109,7 +112,7 @@ The ensemble achieved test-set performance close to its validation performance, 
 | Logistic Regression | 0.813 | 0.888 | 0.907 | 0.462 | 0.610 | 0.516 |
 | Random Forest | 0.814 | 0.891 | 0.909 | 0.566 | 0.673 | 0.478 |
 | SVC | 0.816 | 0.886 | 0.861 | 0.698 | 0.723 | 0.579 |
-| Ensemble | 0.822 | 0.893 | 0.923 | 0.566 | 0.679 | 0.447 |
+| Ensemble | **0.822** | **0.893** | **0.923** | **0.566** | **0.679** | **0.447** |
 
 ---
 
@@ -122,7 +125,7 @@ This project reflects the full lifecycle of applied machine learning:
 - using experiment tracking to keep training decisions reproducible
 - deploying the final system in an interactive application
 
-## Limitations and next steps
+## Limitations
 
 The main limitation is the dataset itself. With only around one thousand records, model comparisons can become unstable, and strong conclusions about generalization should be made carefully. In addition, some variable relationships in the dataset are difficult to interpret from a modern lending standpoint, which limits how confidently one can generalize feature importance findings.
 
