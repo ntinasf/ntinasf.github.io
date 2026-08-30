@@ -26,7 +26,6 @@ This is a content-driven static site with no client-side state or JavaScript fra
 ### Content Structure
 - `_config.yml` — site metadata, theme, plugins, navbar links, and social links (source of truth for global config)
 - `index.md` — homepage (two-column layout: profile photo sidebar + bio)
-- `resume.md` — skills, certifications, education
 - `projects/index.md` — projects gallery
 - `projects/<project-name>/index.md` — individual project case studies
 

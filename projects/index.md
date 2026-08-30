@@ -1,10 +1,23 @@
 ---
 layout: page
 title: Projects
-subtitle: Data analytics and ml case studies
+subtitle: Data analytics and ML case studies
+share-title: "Projects — Fotios Ntinas"
+share-description: "Three case studies: learning-to-rank on Azure ML, a Thessaloniki short-term rental market analysis, and credit risk classification."
 ---
 
 A collection of personal projects demonstrating data analysis and machine learning skills.
+
+---
+
+### Ranking Short-Term Rental Listings
+**Learning to Rank / MLOps | 2026**
+
+A LambdaMART ranking system over 44,684 Inside Airbnb listings for Athens, Thessaloniki and Crete. Covers target construction from calendar availability, a leakage audit, evaluation on a sealed fold at 0.753 NDCG@10, a cold-start failure analysis, and a full A/B test design.
+
+**Tools:** Python, LightGBM, MLflow, Azure ML, Docker
+
+[View Case Study]({{ site.baseurl }}/projects/rental-ranking){: .btn .btn-primary} · [View Repository](https://github.com/ntinasf/rental-ranking){: .btn .btn-info}
 
 ---
 

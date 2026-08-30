@@ -13,12 +13,10 @@ baseurl: ""
 
 social-network-links:
   github: ntinasf
-  linkedin: fotios-ntinas-4a3b4a2b7
+  linkedin: fotios-ntinas
 
 author: Ntinas Fotios
-
-head-extra:
-  - og-image.html
+avatar: "/assets/images/profile_pic.png"
 
 plugins:
   - jekyll-remote-theme
@@ -26,4 +24,11 @@ plugins:
 site-css:
   - "/assets/css/custom-styles.css"
 
-
+# avatar above exists so every page has an og:image for link previews.
+# show-avatar: false keeps it out of the navbar, where it would duplicate the
+# profile photo in the home sidebar.
+defaults:
+  - scope:
+      path: ""
+    values:
+      show-avatar: false
