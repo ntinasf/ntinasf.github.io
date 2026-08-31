@@ -66,7 +66,7 @@ share-description: "Mathematician turned data scientist. Learning-to-rank on Azu
     <p>
       An ensemble ML model with an interactive demo for predicting loan applicant credit risk.
     </p>
-    <p><strong>Tools:</strong> Python, Scikit-learn, MLflow, Streamlit</p>
+    <p><strong>Tools:</strong> Python, Scikit-learn, CatBoost, MLflow, Streamlit, Docker</p>
     <p>
       <a href="{{ site.baseurl }}/projects/credit-risk-classifier" class="btn btn-primary">View Case Study</a>
       <a href="https://credit-risk-h6wzqyepauzgpp29kypx9e.streamlit.app" class="btn btn-info" target="_blank">Try Demo</a>

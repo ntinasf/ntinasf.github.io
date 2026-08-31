@@ -35,9 +35,9 @@ An evidence-based examination of 4,124 short-term rental listings to assess host
 ### Credit Risk Classification
 **Machine Learning | 2025**
 
-An ensemble machine learning model combining Logistic Regression, Random Forest, and SVC to predict credit risk. Features an interactive Streamlit demo where visitors can test the model.
+An ensemble machine learning model combining Logistic Regression, Random Forest, SVC, and CatBoost to predict credit risk. Features an interactive Streamlit demo where visitors can test the model.
 
-**Tools:** Python, Scikit-learn, MLflow, Streamlit
+**Tools:** Python, Scikit-learn, CatBoost, MLflow, Streamlit, Docker
 
 [View Case Study]({{ site.baseurl }}/projects/credit-risk-classifier){: .btn .btn-primary} · [Try Live Demo](https://credit-risk-h6wzqyepauzgpp29kypx9e.streamlit.app){: .btn .btn-info}
 

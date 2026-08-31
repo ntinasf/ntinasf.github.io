@@ -135,7 +135,7 @@ The data reveals a concerning fact: **non-Superhost Large operators** deliver th
 
 ![Quality Gap - Superhost vs Non-Superhost by Host Scale](/assets/images/thessaloniki/Quality%20gap%20sh%20vs%20non-sh.png)
 
-These operators represent roughly 25% of the market. They're the newest entrants (mean 2.1 years), expanding rapidly, and apparently tolerating lower ratings because their business model doesn't require quality excellence.
+These operators represent roughly 25% of the market. They're the newest entrants (mean 2.1 years), expanding rapidly, and carrying lower ratings while they do it. Whether that reflects a deliberate trade-off or growing pains, this data does not say.
 
 This seems like a host problem, but could easily evolve into a destination problem. Visitors who experience subpar stays may not distinguish between "bad operator" and "bad destination."
 
@@ -181,7 +181,7 @@ Here's where geography gets interesting. Downtown listings, dominated by Large m
 
 ![Superhost Rate by Distance Zone](/assets/images/thessaloniki/Superhost%20rate%20by%20distance%20zone.png)
 
-The answer here is **competition**. The data shows that downtown's intense competitive environment forces all host categories to elevate their quality standards.
+**Competition is the obvious explanation, and this data cannot confirm it.** What the data shows is that the downtown uplift appears across every host category — consistent with competitive intensity, and equally consistent with downtown simply attracting operators who were already better.
 
 ![Downtown Quality Uplift by Host Category](/assets/images/thessaloniki/Downtown%20quality%20uplift.png)
 
@@ -192,9 +192,9 @@ The answer here is **competition**. The data shows that downtown's intense compe
 | Medium Multi | 45% | **58%** | **+13%** |
 | Large Multi | 32% | **45%** | **+13%** |
 
-Medium multihosts in downtown achieve a whopping **58% superhost rate**, 13 percentage points above their already high market average. Even Large Multi operators perform significantly better downtown (+13%). The competitive intensity of prime locations forces quality adaptation.
+Medium multihosts in downtown achieve a whopping **58% superhost rate**, 13 percentage points above their already high market average. Even Large Multi operators perform significantly better downtown (+13%). The uplift is concentrated in the two most commercial categories.
 
-Downtown doesn't just attract professional operators; it improves them.
+Whether downtown improves operators or simply selects better ones is the question this snapshot cannot answer. Separating the two needs listings tracked as they move in and out of the zone, not a single month.
 
 ### Central Adjacency Does Not Imply Good Positioning
 
@@ -219,7 +219,7 @@ Geography shapes pricing strategy.
 | Neighborhoods | 20% | 53% |
 | Suburban | 43% | 34% |
 
-Downtown commands premium positioning. Inner City is decisively the budget zone. Suburban shows bimodality, likely due to larger properties or unique/niche offerings that justify distance.
+Downtown commands premium positioning. Inner City is decisively the budget zone. Suburban shows bimodality, consistent with larger properties or niche offerings that justify the distance.
 
 ---
 
@@ -286,7 +286,7 @@ Downtown's Low-budget (€40-60) segment and Inner City's Very Low (<€40) segm
 
 ## The Bigger Picture
 
-Thessaloniki's short-term rental market is, by most measures, healthy. High regulatory compliance, competitive dynamics that counter scale advantages, Downtown competition that elevates quality, a diverse host ecosystem serving multiple market segments.
+Thessaloniki's short-term rental market is, by most measures, healthy. High regulatory compliance, scale advantages that do not show up in the quality figures, higher downtown quality across every host category, a diverse host ecosystem serving multiple market segments.
 
 But the data reveals tensions worth monitoring:
 
@@ -298,7 +298,7 @@ But the data reveals tensions worth monitoring:
 
 **Geography concentrates everything.** 86% of listings cluster within 3km of center. Any quality or saturation issues in downtown zone ripple through the entire market.
 
-For policymakers, the implications are clear: **host diversity matters**. The optimal tourism ecosystem isn't one dominated by commercial operators or individual hosts, but it's one where mid-scale professionalization thrives alongside them. Competition enforces quality standards, and regulatory oversight prevents concentration from undermining market health.
+For policymakers, the implications are clear: **host diversity matters**. The optimal tourism ecosystem isn't one dominated by commercial operators or individual hosts, but it's one where mid-scale professionalization thrives alongside them. Quality is highest where competition is most intense, and concentration is lowest where oversight is strongest. Both are associations in a single snapshot, not mechanisms this analysis established.
 
 Thessaloniki's STR market has the pieces in place. The question is whether growth continues to strengthen the ecosystem or begins to erode it.
 
